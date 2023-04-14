@@ -10,5 +10,14 @@ public class FirstApplication_Controller {
     public String msgHandler() {
         return" SuccessFully Done ";
     }
+    @GetMapping("url123")
+    public String error() {
+        return" Error Found  ";
+    }
+
+    @GetMapping("url")
+    public String urlChecker() {
+        return" URL Added ";
+    }
 }
 //   localhost:8080/url
