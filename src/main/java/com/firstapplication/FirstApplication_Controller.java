@@ -1,6 +1,7 @@
 package com.firstapplication;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,9 +16,9 @@ public class FirstApplication_Controller {
         return" Error Found  ";
     }
 
-    @GetMapping("url")
-    public String urlChecker() {
-        return" URL Added ";
+    @GetMapping("ur1/{id}")
+    public String urlChecker(@PathVariable int id ) {
+        return" URL Added " +id +" Id is added successfully";
     }
 }
 //   localhost:8080/url
